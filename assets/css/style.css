@@ -903,9 +903,10 @@ a.scroll-top i {
           box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.07);
   padding: 50px 20px;
   background: url(../images/servicebg.png) center center;
-  border-radius: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  outline: 3px solid #2f56f9;
+
 }
 
 .service-area .single-service h2 {
@@ -931,7 +932,11 @@ a.scroll-top i {
   font-size: 23px;
   line-height: 44px;
 }
-
+.service-area .single-service:hover .service-icon {
+  transform: rotate(360deg);
+  transition : all 0.5s;
+  background: red;
+}
 .service-area .single-service .service-content p {
   margin-bottom: 0;
   font-size: 16px;
@@ -942,9 +947,8 @@ a.scroll-top i {
 .service-area .single-service:hover {
   -webkit-transform: translateY(-15px);
           transform: translateY(-15px);
-          border-bottom: 3px solid #2f56f9;
+          box-shadow: 0px 10px 10px #000;
 }
-
 .shape-ellips {
   width: 100%;
   position: absolute;
